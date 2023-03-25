@@ -10,6 +10,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+
+  // Handle Submit
   const handleSubmit = async (): Promise<void> => {
     try {
       setTreeData(null);
@@ -17,7 +19,6 @@ export default function Home() {
       const response = await axios.get<{ html: TreeData }>(
         `http://localhost:3000/api/v1/parsedhtml?url=${encodeURIComponent(url)}`
       );
-
       const json = response.data;
       setTreeData(json.html);
       setLoading(false);
@@ -29,6 +30,8 @@ export default function Home() {
     }
   };
 
+
+  // Handle Clear
   const handleClear = (): void => {
     try {
       setTreeData(null);
