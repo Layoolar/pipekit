@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageStyles } from "../../styles/components/ImageStyles";
+import { styles } from "../../styles/components/ImageStyles";
 
 interface props {
   icon: string;
@@ -7,5 +7,5 @@ interface props {
 }
 
 export default function Image({ icon, alt }: props) {
-  return <img src={icon} alt={alt} style={ImageStyles.image} />;
+  return <img src={icon} alt={alt} style={styles.image} />;
 }

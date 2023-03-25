@@ -1,4 +1,4 @@
-export const ImageStyles : any = {
+export const styles : any = {
     arrow: {
     width: "16px",
     height: "16px",
