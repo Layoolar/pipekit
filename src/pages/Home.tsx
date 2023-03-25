@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Tree, { TreeData } from "../components/TreeData";
+import Tree, { TreeData } from "../components/Tree";
 import BeatLoader from "react-spinners/BeatLoader";
 import { styles } from "../styles/pages/HomeStyles";
 
