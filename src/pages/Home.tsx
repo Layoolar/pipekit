@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+import Tree, { TreeData } from "../components/TreeData";
 import BeatLoader from "react-spinners/BeatLoader";
 import { styles } from "../styles/pages/HomeStyles";
 
 export default function Home() {
   const [url, setUrl] = useState<string>("");
-  const [treeData, setTreeData] = useState<TreeNodeData | null>(null);
+  const [treeData, setTreeData] = useState<TreeData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -14,7 +14,7 @@ export default function Home() {
     try {
       setTreeData(null);
       setLoading(true);
-      const response = await axios.get<{ html: TreeNodeData }>(
+      const response = await axios.get<{ html: TreeData }>(
         `http://localhost:3000/api/v1/parsedhtml?url=${encodeURIComponent(url)}`
       );
 
@@ -48,7 +48,7 @@ export default function Home() {
               <BeatLoader color="#173f80" size="20px" />
             </div>
           )}
-
+          {treeData && <Tree label="html" children={treeData.__children} />}  
         </div>
         {/* error message */}
         {error && !loading && <p style={styles.error}>Error occured</p>}
