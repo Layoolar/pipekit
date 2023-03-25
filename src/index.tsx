@@ -12,6 +12,7 @@ const App = () => (
   </div>
 )
 
+
 const HotApp = hot(App)
 
 const root = document.getElementById('root') as HTMLElement
