@@ -32,5 +32,8 @@
     "webpack": "^5.76.2",
     "webpack-dev-middleware": "^6.0.1",
     "webpack-hot-middleware": "^2.25.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.29"
   }
 }

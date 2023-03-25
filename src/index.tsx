@@ -3,15 +3,15 @@ import React from 'react'
 import { render } from 'react-dom'
 import folderIcon from 'assets/folder-icon.svg'
 import fileIcon from 'assets/file-icon.svg'
+import Image from 'components/shared/Image'
 
 const App = () => (
   <div>
     <p>Replace me with application code</p>
-    <p>Use the <img src={folderIcon} alt="folder icon" /> icon for HTML elements with children</p>
-    <p>Use the <img src={fileIcon} alt="file icon" /> icon for HTML elements without children</p>
+    <p><Image icon={folderIcon} alt="folderIcon" /></p>
+    <p><Image icon={fileIcon} alt="file icon" /></p>
   </div>
 )
-
 
 const HotApp = hot(App)
 
