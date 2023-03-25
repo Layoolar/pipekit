@@ -1,0 +1,65 @@
+export const styles: any = {
+  container: {
+    width: "90%",
+    margin: "0 auto",
+    height: "90vh",
+    padding: "2em",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
+  folder: {
+    border: "1px solid #ccc",
+    borderRadius: "7px",
+    padding: "3em 0",
+  },
+  userInput: {
+    textAlign: "center",
+    width: "80%",
+    margin: "0 auto",
+  },
+  input: {
+    margin: "2em",
+    color: "#505050",
+    outline: "none",
+    border: "none",
+    width: "80%",
+    textAlign: "center",
+    padding: "0.5em",
+    borderBottom: "1px solid #ccc",
+    fontSize: "1.2em",
+  },
+  button1: {
+    border: "1px solid black",
+    color: "black",
+    borderRadius: "5px",
+    padding: "1em 2em",
+    outline: "none",
+    backgroundColor: "transparent",
+    margin: "0 2em",
+  },
+  button2: {
+    border: "1px solid black",
+    color: "white",
+    borderRadius: "5px",
+    padding: "1em 2em",
+    outline: "none",
+    backgroundColor: "black",
+    margin: "0 2em",
+  },
+
+  header: {
+    color: "#505050",
+    margin: "1em 1em",
+  },
+  loader: {
+    display: "flex",
+    margin: "1em 0",
+    justifyContent: "center",
+  },
+  error: {
+    textAlign: "center",
+    fontWeight: "700",
+    color: "#FF9494",
+  },
+};
