@@ -2,13 +2,8 @@
 
 - [Description](#description)
 - [Capabilities](#capabilities)
-- [Extra Features](#extra-features)
-- [Demo](#demo)
-- [NPM start](#npm-start)
-- [NPM run client](#npm-run-client)
-- [NPM run server](#npm-run-server)
-- [Node index.js](#node-indexjs)
-- [Database Configuration](#database-configuration)
+- [Extra Features](#short-demo)
+- [How to start](#how-to-start) 
 
 ### Description
 
