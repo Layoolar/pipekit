@@ -2,7 +2,7 @@
 
 - [Description](#description)
 - [Capabilities](#capabilities)
-- [Extra Features](#short-demo)
+- [Short Demo](#short-demo)
 - [How to start](#how-to-start) 
 
 ### Description
