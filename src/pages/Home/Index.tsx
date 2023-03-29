@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Tree, { TreeData } from "../components/Tree";
+import Tree, { TreeData } from "../../components/Tree/Tree";
 import BeatLoader from "react-spinners/BeatLoader";
-import { styles } from "../styles/pages/HomeStyles";
+import { styles } from "./HomeStyles";
 
 export default function Home() {
   const [url, setUrl] = useState<string>("");
@@ -15,6 +15,7 @@ export default function Home() {
   const handleSubmit = async (): Promise<void> => {
     try {
       setTreeData(null);
+      setError("");
       setLoading(true);
       const response = await axios.get<{ html: TreeData }>(
         `http://localhost:3000/api/v1/parsedhtml?url=${encodeURIComponent(url)}`
@@ -35,6 +36,7 @@ export default function Home() {
   const handleClear = (): void => {
     try {
       setTreeData(null);
+      setError("")
       setUrl("");
     } catch (error: any) {
       setError(error.message);

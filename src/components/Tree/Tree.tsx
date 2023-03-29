@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import folderIcon from "../../assets/folder-icon.svg";
-import fileIcon from "../../assets/file-icon.svg";
-import { styles } from "../styles/components/TreeStyles";
+import folderIcon from "../../../assets/folder-icon.svg";
+import fileIcon from "../../../assets/file-icon.svg";
+import { styles } from "./TreeStyles";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 
 interface TreeProps {

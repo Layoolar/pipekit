@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "../../styles/components/ImageStyles";
+import { styles } from "./ImageStyles";
 
 interface props {
   icon: string;
