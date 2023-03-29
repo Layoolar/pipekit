@@ -35,6 +35,7 @@ export default function Home() {
   // Handle Clear
   const handleClear = (): void => {
     try {
+      setError("");
       setTreeData(null);
       setError("")
       setUrl("");
